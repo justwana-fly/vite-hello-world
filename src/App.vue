@@ -1,19 +1,28 @@
 <!-- Create e utilizzate un componente AppTitle, il quale contiene un titolo che recita "La mia prima app con Vite!" -->
 <template>
- <h1>{{ title }}</h1>
+  <body>
+    <AppTitle />
+   <AppHero />
+  </body>
+ 
 </template>
 
 <script>
-  export default {
-    data(){
-      return {
-       title: 'Hello World'
-      }
+import  AppTitle from "./components/AppTitle.vue";
+import AppHero from "./components/AppHero.vue";
+export default {
+  components:{
+      AppTitle,
+      AppHero
     },
-    
-  }
+  data() {
+ 
+    return {
+      
+    }
+  },
+
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
